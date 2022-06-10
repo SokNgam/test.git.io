@@ -6,7 +6,7 @@
     font-family: 'Aldrich', sans-serif;
 }
 body{
-    background-color: #00d9ff96 !important;
+    background: linear-gradient(180deg, #0c2739 0%, #0c2739 50%, #0f1011 100%);
 }
 a{
     text-decoration: none !important;
@@ -16,7 +16,8 @@ ul{
 }
 /* Header */
 .main-header{
-    background-color: #dede46;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #0C2739;
     margin: 0;
     padding: 10px 0px;
     position: sticky;
@@ -32,15 +33,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #201e1e;
     height: 60px;
     width: 250px;
-    border-radius: 8px;
 }
-.logo video{
+.logo img{
     width: 60px;
     height: 60px;
-    border-radius: 10px;
 }
 .logo a{
     font-size: 25px;
@@ -60,47 +58,50 @@ header{
     padding: 0px 20px;
     font-size: 18px;
     font-weight: 600;
-    color: #000000;
+    color: #fff;
 }
 .menu ul li a:hover{
-    color:#ffffff;
+    color:#808080;
 }
 .user a{
     font-size: 18px;
-    color: #000000;
+    color: #fff;
     font-weight: 500;
 }
 .user a:hover{
-    color: #ffffff;
+    color: #808080;
 }
 
 /* Form */
 .main-bg-form-login,
 .main-bg-form-register{
-    background-color: #00000013;
+    /* background-color: #00000013; */
+    background-color: #0c2739;
     width: 100%;
     height: 100vh;
     position: fixed;
     display: none;
-    z-index: 1000;
+    z-index: 10001;
+    top: 0;
+    left: 0;
 }
 .main-form-login,
 .main-form-register{
     position: relative;
     width: 500px;
     margin: 50px auto;
-    background-color: #e8e800;
+    background-color: #0c2739;
     border-radius: 8px;
     padding: 10px;
 }
-.images-user{
-    border: 1px solid #000000;
+.user-icon{
+    border: 1px solid #fff;
     border-radius: 100%;
     width: 100px;
     height: 100px;
     margin: auto;
 }
-.images-user img{
+.user-icon lord-icon{
     width: 100%;
     height: 100%;
     border-radius: 100%;
@@ -108,7 +109,7 @@ header{
 .main-form-login label,
 .main-form-register label{
     font-size: 17px;
-    color: #000000;
+    color: #fff;
     font-weight: 500;
     padding: 5px 0px;
 }
@@ -121,6 +122,7 @@ header{
     outline: none;
     padding: 8px;
     border-radius: 8px;
+    color: #000000;
 }
 .main-form-login button,
 .main-form-register button{
@@ -134,7 +136,7 @@ header{
 }
 .main-form-login button:hover,
 .main-form-register button:hover{
-    color: #ffffff;
+    color: #000000;
     background-color: #00d000;
 }
 .main-form-login i,
@@ -144,6 +146,7 @@ header{
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
+    color: #fff;
 }
 
 /* Banner */
@@ -166,12 +169,12 @@ header{
     width: 480px;
     font-size: 50px;
     font-weight: 700;
-    color: #000000;
+    color: #fff;
 }
 .banner .left p{
     font-size: 18px;
     font-weight: 500;
-    color: #000000;
+    color: #fff;
 }
 .banner .right .images{
     margin: auto;
@@ -224,12 +227,12 @@ header{
 .box-detail .right-box h6{
     font-size: 35px;
     padding: 0px 10px;
-    color: #000000;
+    color: #fff;
 }
 .box-detail .right-box p{
     font-size: 18px;
     padding: 0px 10px;
-    color: #000000;
+    color: #fff;
 }
 
 /* service */
@@ -239,7 +242,7 @@ header{
     font-size: 30px;
     font-weight: bold;
     padding: 20px 0px;
-    color: #000000;
+    color: #fff;
 }
 .service:after,
 .our-team:after{
@@ -253,7 +256,7 @@ header{
     width: 316px;
     padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: #fff;
+    background-color: #0C2739;
     border-radius: 10px;
 }
 .service .box:hover{
@@ -271,13 +274,13 @@ header{
 }
 .service .box h6{
     font-size: 18px;
-    color: #001effc0;
+    color: #fff;
     font-weight: 600;
     text-align: center;
     padding: 10px 5px;
 }
 .service .box p{
-    color: #3e3e3e;
+    color: #fff;
     font-size: 17px;
     font-weight: 500;
     padding: 0px 5px;
@@ -289,7 +292,7 @@ header{
     -webkit-box-orient: vertical;
 }
 .service .box a{
-    color: #3e3e3e;
+    color: #fff;
     font-weight: bold;
     font-size: 15px;
     padding: 0px 5px;
@@ -334,12 +337,12 @@ header{
 }
 .our-team .box .des h6{
     font-size: 17px;
-    color: #000000;
+    color: #fff;
     font-weight: 600;
     padding: 5px;
 }
 .our-team .box .des p{
-    color: #3e3e3e;
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
 }
@@ -347,8 +350,8 @@ header{
 /* Footer */
 .main-footer{
     /* background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); */
-    background-color: #dede46;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #0C2739;
 }
 .footer{
     display: flex;
@@ -357,7 +360,7 @@ header{
 .footer .logo{
     font-size: 30px;
     width: 250px;
-    color: #000000;
+    color: #fff;
     margin-top: 10px;
 }
 .footer .about-us{
@@ -367,12 +370,12 @@ header{
 .footer .social-media h6{
     font-size: 20px;
     font-weight: bold;
-    color: #000000;
+    color: #fff;
     text-align: center;
     padding: 10px 0px;
 }
 .footer .about-us p{
-    color: #000000;
+    color: #fff;
     font-size: 17px;
     padding: 10px;
     font-weight: 500;
@@ -385,9 +388,9 @@ header{
     color: rgba(255, 255, 255, 0.856);
     font-size: 18px;
     padding: 10px;
-    background-color: #000000;
     text-align: center;
-    border-radius: 100%;
+    border-radius: 10px;
+    background-color: #19415c;
 }
 .footer .social-media .fa-facebook:hover{
     background-color: #0000ff;
@@ -424,7 +427,7 @@ header{
 }
 .box-contact h6{
     font-size: 30px;
-    color: #000000;
+    color: #fff;
     font-weight: bold;
     text-align: center;
     padding: 20px 0px;
@@ -451,23 +454,25 @@ header{
     border-radius: 10px;
     border: none;
     outline: none;
+    background-color: #8080802a;
 }
 .contact .left button{
     border: none;
     outline: none;
-    background-color: #00d000b0;
+    background-color: #8080802a;
     padding: 8px;
     border-radius: 10px;
     width: 80px;
     color: #fff;
 }
 .contact .right{
-    background-color: #dddcdc;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #0C2739;
     border-radius: 10px;
 }
 .contact .right h5{
     text-align: center;
-    color: #000000;
+    color: #fff;
     padding: 10px 0px;
     font-size: 20px;
     font-weight: 600;
@@ -475,7 +480,7 @@ header{
 .contact .right i,
 .contact .right span{
     font-size: 18px;
-    color: #000000;
+    color: #fff;
     padding: 10px 0px;
 }
 .contact .right iframe{
@@ -484,9 +489,9 @@ header{
 
 
 /* Page detail service */
-.main-page-service{
+/* .main-page-service{
     background-color: rgba(32, 30, 30, 0.034);
-}
+} */
 .main-title{
     width: 100%;
     background-color: #b2b2b2;
@@ -526,11 +531,191 @@ header{
     font-size: 30px;
     font-weight: 600;
     padding: 0px 0px 15px 0px;
-    color: #000000;
+    color: #fff;
 }
 .box-page-service .right p{
     font-size: 18px;
-    color: #000000;
+    color: #fff;
     font-weight: 500;
     padding-bottom: 10px;
+}
+
+/* page solution */
+.main-solution{
+    padding: 0;
+    /* background-color: #fff; */
+}
+.solution-1{
+    display: flex;
+    justify-content: space-between;
+}
+.solution-1 .left,
+.solution-1 .right{
+    width: 50%;
+    padding: 10px;
+}
+.solution-1 .left .title-solution{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+.solution-1 .left .detail-solution{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    border-left: 2px solid #ff8000;
+    padding: 10px;
+}
+.solution-1 .right .images{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.solution-1 .right .images img{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.solution-1 .right .images img:hover{
+    transform: scale(1.1);
+}
+
+/* two */
+.solution-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.solution-2 .left,
+.solution-2 .right{
+    width: 50%;
+    padding: 10px;
+}
+.solution-2 .right .title-solution{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+.solution-2 .right .detail-solution{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    border-left: 2px solid #ff8000;
+    padding: 10px;
+}
+.solution-2 .left .images{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.solution-2 .left .images img{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.solution-2 .left .images img:hover{
+    transform: scale(1.1);
+}
+.footer-title-solution {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* page features */
+.main-features{
+    padding: 0;
+    /* background-color: #fff; */
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+}
+.features .left,
+.features .right{
+    width: 50%;
+    padding: 20px;
+}
+.features .left .title-features{
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold;
+}
+.features .left .detail.features{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.features .right .images{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.features .right .images img{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.features .right .images img:hover{
+    transform: scale(1.1);
+}
+.main-features-2{
+    /* background: linear-gradient(180deg, #EEECEB 0%, #fff 100%); */
+}
+.title-features-2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+.features-2{
+    display: flex;
+    justify-content: space-between;
+}
+.features-2 .left,
+.features-2 .right{
+    width: 50%;
+    padding: 30px;
+}
+.features-2 .left .images{
+    width: 450px;
+    height: 400px;
+    margin: auto;
+}
+.features-2 .left .images img{
+    width: 100%;
+    height: 100%;
+}
+.features-2 .right .main-box{
+    display: flex;
+    justify-content: space-between;
+}
+.features-2 .right .main-box .box{
+    width: 300px;
+    padding: 10px 20px;
+}
+.features-2 .right .main-box .box .title-box{
+    display: flex;
+    padding: 10px 0px;
+}
+.features-2 .right .main-box .box .title-box i{
+    font-size: 30px;
+    color: #fff;
+}
+.features-2 .right .main-box .box .title-box h6{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.features-2 .right .main-box .box .detail-box p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
 }
